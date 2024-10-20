@@ -4,29 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterScreen"
     android:background="@android:color/white"
-    android:id='@+id/register'>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".LoginScreenActivity">
+        android:fontFamily="poppins">
 
 
     <TextView
         android:id="@+id/login"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create Account"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="@color/blue"
         android:textAlignment="center"
-        android:lineHeight="45dp"
+        android:lineHeight="45sp"
         android:textFontWeight="700"
-        android:fontFamily="poppins"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,14 +34,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create an account so you can explore all the \nexisting jobs"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:textColor="@color/black"
-        android:lineHeight="21dp"
+        android:lineHeight="21sp"
         android:textFontWeight="500"
-        android:fontFamily="poppins"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="140dp"
         android:textAlignment="center"/>
 
     <EditText
@@ -71,7 +67,7 @@
         android:textColorHint="@color/black"
         android:hint="Password"
         android:paddingLeft="15dp"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:layout_marginTop="310dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -87,7 +83,7 @@
         android:paddingLeft="15dp"
         android:drawablePadding="12dp"
         android:textColorHint="@color/black"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:layout_marginTop="390dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -121,7 +117,6 @@
         android:textColor="@color/black"
         android:lineHeight="21dp"
         android:textFontWeight="600"
-        android:fontFamily="poppins"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="550dp"
@@ -137,51 +132,54 @@
         android:textAlignment="center"
         android:lineHeight="21dp"
         android:textFontWeight="600"
-        android:fontFamily="poppins"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="620dp"/>
 
-    <ImageButton
-        android:id="@+id/google"
-        android:layout_width="65dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="652dp"
-        android:layout_marginLeft="88dp"
-        android:src="@drawable/google_logo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/facebook"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="10dp"
-        android:background="@drawable/imagebox"
-        android:scaleType="fitCenter" />
+        <ImageButton
+            android:id="@+id/google"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="652dp"
+            android:layout_marginLeft="88dp"
+            android:src="@drawable/google_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/facebook"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="10dp"
+            android:background="@drawable/imagebox"
+            android:scaleType="fitCenter" />
 
-    <ImageButton
-        android:id="@+id/facebook"
-        android:layout_width="65dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="652dp"
-        app:layout_constraintStart_toEndOf="@+id/google"
-        app:layout_constraintEnd_toStartOf="@+id/apple"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/facebook_logo"
-        android:background="@drawable/imagebox"
-        android:padding="10dp"
-        android:scaleType="fitCenter"
-        android:layout_marginLeft="5dp"/>
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="652dp"
+            app:layout_constraintStart_toEndOf="@+id/google"
+            app:layout_constraintEnd_toStartOf="@+id/apple"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/facebook_logo"
+            android:background="@drawable/imagebox"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"/>
 
-    <ImageButton
-        android:id="@+id/apple"
-        android:layout_width="65dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="652dp"
-        android:src="@drawable/apple_logo"
-        android:scaleType="fitCenter"
-        android:padding="10dp"
-        android:background="@drawable/imagebox"
-        app:layout_constraintStart_toEndOf="@+id/facebook"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="5dp"/>
+        <ImageButton
+            android:id="@+id/apple"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="652dp"
+            android:layout_marginRight="65dp"
+            android:src="@drawable/apple_logo"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:background="@drawable/imagebox"
+            app:layout_constraintStart_toEndOf="@+id/facebook"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="10dp"/>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
