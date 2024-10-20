@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         val openlogin = findViewById<Button>(R.id.login)
         openlogin.setOnClickListener{
             val currentFragment = supportFragmentManager.findFragmentById(R.id.main)
-            if (currentFragment !is login_screen) {
-                val fragment = login_screen()
+            if (currentFragment !is LoginScreen) {
+                val fragment = LoginScreen()
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.main, fragment)
                 transaction.addToBackStack(null)
@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         val openregister = findViewById<Button>(R.id.register)
         openregister.setOnClickListener{
             val currentFragment = supportFragmentManager.findFragmentById(R.id.main)
-            if (currentFragment !is register_screen) {
-                val fragment = register_screen()
+            if (currentFragment !is RegisterScreen) {
+                val fragment = RegisterScreen()
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction.replace(R.id.main, fragment)
                 transaction.addToBackStack(null)
