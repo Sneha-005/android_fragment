@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            app:srcCompat="@drawable/welcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="0dp" />
+        <TextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover Your \nDream Job here"
+            android:textSize="35dp"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:lineHeight="52.5dp"
+            android:textFontWeight="600"
+            android:fontFamily="poppins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="420dp" />
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore all the existing job roles based on your \ninterest and study major"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textFontWeight="400"
+            android:fontFamily="poppins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="540dp"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/register"
+            app:cornerRadius="10dp"
+            android:backgroundTint="@color/blue"
+            android:layout_marginTop="650dp"
+            android:textFontWeight="300"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+        <Button
+            android:id="@+id/register"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/login"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="650dp"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
