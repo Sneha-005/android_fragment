@@ -6,16 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
 import androidx.navigation.NavController
-import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
 import com.example.fragments.R.*
 
 
-class LoginScreen : Fragment() {
+class Home : Fragment() {
     private lateinit var navController: NavController
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -26,18 +24,19 @@ class LoginScreen : Fragment() {
     }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_login_screen, container, false)
-
-        view.findViewById<TextView>(R.id.new_account).setOnClickListener {
-            val navOptions = NavOptions.Builder()
-                .setPopUpTo(R.id.loginScreen, true)
-                .build()
-            navController.navigate(R.id.action_loginScreen_to_registerScreen, null, navOptions)
+        val view = inflater.inflate(layout.fragment_home, container, false)
+        view.findViewById<Button>(R.id.login).setOnClickListener {
+            navController.navigate(R.id.action_home3_to_loginScreen)
+        }
+        view.findViewById<Button>(R.id.register).setOnClickListener {
+            navController.navigate(R.id.action_home3_to_registerScreen)
         }
         return view
 
     }
 }
+
+
+
