@@ -21,7 +21,7 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="poppins">
+            android:fontFamily="@font/poppins_black">
 
             <ImageView
                 android:id="@+id/welcomeImage"
@@ -33,7 +33,7 @@
                 app:layout_constraintEnd_toEndOf="parent"/>
             <TextView
                 android:id="@+id/mainText"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Discover Your \nDream Job here"
                 android:textSize="35sp"
@@ -47,7 +47,7 @@
                 android:layout_marginTop="420dp" />
             <TextView
                 android:id="@+id/subText"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Explore all the existing job roles based on your \ninterest and study major"
                 android:textSize="14sp"

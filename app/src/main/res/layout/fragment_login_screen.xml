@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".LoginScreenActivity"
-            android:fontFamily="poppins">
+            android:fontFamily="@font/poppins_black">
 
 
         <TextView
@@ -117,7 +117,7 @@
 
         <TextView
             android:id="@+id/new_account"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create new account"
             android:textSize="14sp"
@@ -127,11 +127,12 @@
             android:textFontWeight="600"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="550dp" />
 
         <TextView
             android:id="@+id/option"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="or continue with"
             android:textSize="14sp"
@@ -141,6 +142,7 @@
             android:textFontWeight="600"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="620dp" />
 
         <ImageButton

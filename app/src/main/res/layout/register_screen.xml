@@ -19,7 +19,7 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="poppins">
+            android:fontFamily="@font/poppins_black">
 
 
         <TextView
@@ -118,7 +118,7 @@
 
         <TextView
             android:id="@+id/old_account"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have an account"
             android:textSize="14dp"
@@ -127,12 +127,13 @@
             android:textFontWeight="600"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="550dp"
             android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/option"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="or continue with"
             android:textSize="14dp"
@@ -142,6 +143,7 @@
             android:textFontWeight="600"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="620dp"/>
 
             <ImageButton
